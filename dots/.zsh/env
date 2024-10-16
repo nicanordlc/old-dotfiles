@@ -33,6 +33,7 @@ export SPACESHIP_GCLOUD_SHOW="false"
 # GPG
 # ===
 export GPG_TTY=$(tty)
+export GPG_ID="8420CF1BAD499FB0"
 
 # GoLang
 export GOROOT="$HOME/.go"
