@@ -1,7 +1,7 @@
 # main user, MAIN !!!
 [user]
-    email = "cabaalexander321@gmail.com"
-    name = "cabaalexander"
+    email = "nicanordlc.dev@gmail.com"
+    name = "nicanordlc"
     signingkey = 8420CF1BAD499FB0
 # overwrite: email, name and sshKey (with ssh command <file>)
 [includeIf "gitdir:baires/"]
