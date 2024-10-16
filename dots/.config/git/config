@@ -27,6 +27,7 @@
     rank = shortlog -sn --no-merges
     todo = grep -EIn "TODO|FIXME"
     gpg = "!f(){ git log --show-signature -${1:-1}; };f"
+    undo = "!f() { git reset --soft HEAD^ && git reset; };f"
 [merge]
     tool = vim_mergetool
     conflictstyle = diff3
@@ -36,7 +37,8 @@
     cmd = nvim -c "MergetoolStart" "$MERGED" "$BASE" "$LOCAL" "$REMOTE"
     trustExitCode = true
 [push]
-    default = simple
+    autoSetupRemote = true
+    default = current
 [color]
     ui = true
 [color "diff"]

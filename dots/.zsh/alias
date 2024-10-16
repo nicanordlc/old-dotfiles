@@ -131,6 +131,18 @@ alias tmuxupdate="~/.tmux/plugins/tpm/bin/update_plugins"
 alias tmuxclean="~/.tmux/plugins/tpm/bin/clean_plugins"
 alias tma='tmux attach'
 
+# bun
+# ===
+alias b="bun"
+alias ba="bun install"
+alias bad="bun install -d"
+alias brm="bun remove"
+alias bln="bun lint"
+alias bst="bun run start"
+alias bd="bun run dev"
+alias bx="bunx"
+alias bb="bun run build"
+
 ##########
 #        #
 # Random #

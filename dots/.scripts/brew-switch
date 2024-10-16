@@ -1,0 +1,33 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+app=${1:-}
+version=${2:-}
+
+error=0
+
+__error(){
+  local msg
+  local=$1
+  error=1
+  echo "[error]: $1"
+}
+
+if [[ -z "$app" ]]; then
+  __error "app needed"
+fi
+
+if [[ -z "$version" ]]; then
+  __error "version needed"
+fi
+
+if [[ "$error" -gt 0 ]]; then
+  exit 1
+fi
+
+# if fails it stops
+brew list "$app@$version" &> /dev/null
+
+# change version
+brew unlink "$app" && brew link --overwrite --force "$app@$version"
+

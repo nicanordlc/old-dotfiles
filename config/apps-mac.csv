@@ -44,6 +44,11 @@ a,orbstack,on,
 ,pyenv,on,
 ,gh,on,
 ,lazygit,on,
+,gleam,on,
+,openssl@3,on,
+,pipenv,on,
+,tnftp,off,
+,tesseract,off,
 
 #######
 #     #
