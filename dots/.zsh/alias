@@ -65,9 +65,10 @@ alias gmc='git merge --continue'
 
 # Commit
 # ======
-alias gcz='gcm z'
-alias gcma='gcm a'
-alias gcman='gcm n'
+alias gcm='git commit'
+alias gcz='git cz'
+alias gcma='git commit --amend'
+alias gcman='git commit --amend --no-edit --no-verify'
 
 # Release
 alias grls='npx semantic-release'
